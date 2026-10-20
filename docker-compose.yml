@@ -8,7 +8,7 @@ services:
       POSTGRES_USER: sio_user
       POSTGRES_PASSWORD: sio_password
     ports:
-      - "5432:5432"
+      - "5434:5432"
     volumes:
       # 1. Monta lo script SQL per l'esecuzione automatica al primo avvio
       - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
